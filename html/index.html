@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <main id="content-left">
+        <div id="foto">
+            foto
+        </div>
+        <div id="datos">
+            <span>Nombre:</span> <br><br>
+        
+            <span>Edad:</span>
+        </div>
+        <div id="hobbies">
+            <div>futbol</div>
+            <div>beisbol</div>
+            <div>leer</div>
+            <div>nadar</div>
+            <div>bailar</div>
+            <div>cantar</div>
+        </div>
+
+    </main>
+    <header>
+        Actividades
+    </header>
+    <div id="task">
+        Añade una tarea
+    </div>
+    <div id="clima">
+        Reporte del clima
+    </div>
+    <div id="list">
+        Lista de pendientes
+    </div>
+    <div id="calc">
+        <span>Calculadora</span>
+        <div>
+            <input type="text" id="num1" placeholder="numero 1"/>
+            <br>
+            <input type="text" id="num2" placeholder="numero 2"/>
+            <br>
+            <button onclick="getValues('s')">suma</button>
+            <button onclick="getValues('m')">producto</button>
+            <button onclick="getValues('r')">resta</button>
+            <button onclick="getValues('d')">division</button>
+            
+            <span>Resultado</span>
+            <div id="response"></div>
+        </div>
+    </div>
+    <script src="../js/funcionalidad.js"></script>
+</body>
+
+</html>

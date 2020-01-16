@@ -1,0 +1,89 @@
+/*Estilos para todo el cuerpo*/
+body{
+    display: grid;
+    width: 99%;
+    height: 100%;
+    grid-template-areas: "perf actv actv"
+                         "perf task clima"
+                         "perf list calc";
+    grid-template-columns: 3fr 4fr 4fr;
+    grid-template-rows: 100px 245px 245px;
+    text-align: center;
+}
+/*Estilos en general para cada division de la pagina*/
+body > #content-left{
+    grid-area: perf;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:30px 0px 30px 0px;
+    align-items: center;
+    background-color: rgb(218, 203, 203);
+}
+body > header{
+    grid-area: actv;
+    background-color: rgb(226, 214, 198);
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 2em;
+}
+body >#task{
+    grid-area: task;
+    background-color: rgb(212, 247, 248);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 1.5em;
+}
+body > #clima{
+    grid-area: clima;
+    background-color: rgb(228, 240, 217);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 1.5em;
+}
+body > #list{
+    grid-area: list;
+    background-color: rgb(243, 219, 224);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 1.5em;
+}
+body > #calc{
+    grid-area: calc;
+    background-color: rgb(208, 238, 238);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 1.5em;
+}
+/*Estilos para elementos en particular contenidos en los bloques*/
+#foto{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(206, 240, 206);
+    text-align: center;
+}
+#content-left>#hobbies{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+body>#content-left>#hobbies>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 80px;
+    margin: 5px 5px 5px 5px;
+    border-radius: 50px;
+    background-color: rgb(189, 198, 223);
+    font-family: monospace;
+}
+#content-left>#datos{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+
+
