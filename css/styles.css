@@ -16,7 +16,7 @@ body > #content-left{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding:30px 0px 30px 0px;
+    padding:80px 0px 30px 0px;
     align-items: center;
     background-color: rgb(218, 203, 203);
 }
@@ -53,8 +53,8 @@ body > #calc{
 }
 /*Estilos para elementos en particular contenidos en los bloques*/
 #foto{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width:150px;
     border-radius: 50%;
     background-color: rgb(206, 240, 206);
     text-align: center;
@@ -83,6 +83,7 @@ body>#content-left>#hobbies>div{
     flex-direction: column;
     text-align:center;
     font-family: "Lucida Console", Monaco, monospace;
+    padding-bottom: 40px;
 }
 
 
