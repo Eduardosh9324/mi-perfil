@@ -7,7 +7,7 @@ body{
                          "perf task clima"
                          "perf list calc";
     grid-template-columns: 3fr 4fr 4fr;
-    grid-template-rows: 100px 245px 1fr;/*245px;*/
+    grid-template-rows: 100px 230px 230px;/*245px;*/
     text-align: center;
 }
 /*Estilos en general para cada division de la pagina*/
@@ -16,9 +16,10 @@ body > #content-left{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding:80px 0px 30px 0px;
+    padding:30px 0px 30px 0px;
     align-items: center;
     background-color: rgb(218, 203, 203);
+    /*height: 100%;*/
 }
 body > header{
     grid-area: actv;
@@ -32,32 +33,42 @@ body >#task{
     background-color: rgb(212, 247, 248);
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 1.5em;
+    height: 100%;
 }
 body > #clima{
     grid-area: clima;
     background-color: rgb(228, 240, 217);
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 1.5em;
+    height: 100%;
 }
 body > #list{
     grid-area: list;
     background-color: rgb(243, 219, 224);
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 1.5em;
+    height: 100%;
 }
 body > #calc{
     grid-area: calc;
     background-color: rgb(208, 238, 238);
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 1.5em;
+    height: 100%;
+}
+button{
+    border-radius: 10px;
+    background-color: rgb(236, 109, 109);
 }
 /*Estilos para elementos en particular contenidos en los bloques*/
 #foto{
-    height: 150px;
-    width:150px;
+    height: 120px;
+    width:120px;
+    border-bottom: 20px;
     border-radius: 50%;
     background-color: rgb(206, 240, 206);
     text-align: center;
+    
 }
 #content-left>#hobbies{
     display: flex;
@@ -66,12 +77,13 @@ body > #calc{
     justify-content: center;
     align-items: center;
     width: 100%;
+    
 }
 body>#content-left>#hobbies>div{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 40px;
     width: 80px;
     margin: 5px 5px 5px 5px;
     border-radius: 50px;
@@ -83,7 +95,8 @@ body>#content-left>#hobbies>div{
     flex-direction: column;
     text-align:center;
     font-family: "Lucida Console", Monaco, monospace;
-    padding-bottom: 70px;
+    padding-bottom: 150px;
+    
 }
 #task>#tareas{
     display: flex;

@@ -1,5 +1,5 @@
-function createNewElement(){
-
+function createNewElement(indicator){
+    if (indicator==='a'){
     console.log("entre a tareas.....")
     //Conseguimos la tabla
     var tabla = document.getElementById("tabla");
@@ -21,5 +21,27 @@ function createNewElement(){
     newTr.appendChild(newTd1);
     newTr.appendChild(newTd2);
     //Colocamos en la tabla
-    tabla.appendChild(newTr);  
+    tabla.appendChild(newTr);
+    }
+    else{
+        var tabla = document.getElementById('tabla');
+        var filas = document.getElementsByTagName('tr');
+        var tama = filas.length - 1;
+        /*var tama = 0;
+        filas.length !== 0 ? tama=filas.length-1 : tama=0;
+        console.log(tama)
+        var fila = document.getElementsByTagName('tr')[tama];
+        console.log(filas)
+        console.log(fila)*/
+        if(tama!==0){
+           console.log(filas)
+           tabla.removeChild(filas[tama]); 
+        }else{
+            console.log('Ya no hay elementos en el arreglo')                
+        }
+
+        
+        
+
+    }
 }

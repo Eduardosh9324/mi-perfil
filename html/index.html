@@ -41,8 +41,11 @@
             <div id="der">
                 <input id="fecha" type="date" placeholder="Fecha">
                 <input id="persona" type="text" placeholder="Quien realiza">
-                <button onclick="createNewElement()">Agregar</button>
-            </div>
+                <div>
+                    <button style="width: 80px;" onclick="createNewElement('a')">Agregar</button>
+                    <button style="width: 80px;" onclick="createNewElement('e')">Eliminar</button> 
+                </div>
+                </div>
 
         </div>
 
@@ -53,7 +56,7 @@
     <div id="list">
         <h5>Lista de pendientes</h5>
         <div id="pendientes">
-            <table id="tabla">
+            <table id="tabla" border="1">
                 <tr>
                     <td>¿Quién realiza?</td>
                     <td>Descripción</td>
@@ -74,7 +77,6 @@
             <button onclick="getValues('m')">producto</button>
             <button onclick="getValues('r')">resta</button>
             <button onclick="getValues('d')">division</button>
-
             <span>Resultado</span>
             <div id="response"></div>
         </div>

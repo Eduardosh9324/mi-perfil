@@ -1,7 +1,7 @@
 function getValues(indicator){
-    console.log('entre a la funcion..')
-    let num1 = parseInt(document.getElementById('num1').value)
-    let num2 = parseFloat(document.getElementById('num2').value)
+    console.log('entre a la funcion..');
+    let num1 = parseInt(document.getElementById('num1').value);
+    let num2 = parseFloat(document.getElementById('num2').value);
    
     //console.log(num1)
     //console.log(num2)
