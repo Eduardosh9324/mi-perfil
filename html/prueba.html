@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="task">
+        <h5>Añade una tarea</h5>
+        <div id="tareas" action="" onsubmit="newFunction()">
+            <div id="izq">
+                <textarea id="desc" name="mensaje" rows="7" placeholder="Descripcion de la tarea">HOO</textarea>
+            </div>
+            <div id="der">
+                <input id="fecha" type="text" placeholder="Fecha">
+                <input id="persona" type="text" placeholder="Quien realiza">
+                <button onclick="createNewElement()">guardar</button>
+            </div>
+
+        </div>
+    </div>
+    <div id="row">
+        <h5>Lista de pendientes</h5>
+        <div id="container">
+
+            
+
+        </div>
+
+    </div>
+
+    <button onclick="createNewElement()">Agregar</button>
+    <ul id="list">
+        <li>uno</li>
+    </ul>
+
+    <script src="../js/tareas.js">
+        
+    </script>
+    <script>
+        
+        function newFunction() {
+            return false
+        }
+
+    </script>
+</body>
+</html>

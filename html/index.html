@@ -16,7 +16,7 @@
         </div>
         <div id="datos">
             <span>Nombre:</span> <br><br>
-        
+
             <span>Edad:</span>
         </div>
         <div id="hobbies">
@@ -33,31 +33,54 @@
         Actividades
     </header>
     <div id="task">
-        Añade una tarea
+        <h5>Añade una tarea</h5>
+        <div id="tareas" action="">
+            <div id="izq">
+                <textarea id="desc" name="mensaje" rows="7" placeholder="Descripcion de la tarea"></textarea>
+            </div>
+            <div id="der">
+                <input id="fecha" type="date" placeholder="Fecha">
+                <input id="persona" type="text" placeholder="Quien realiza">
+                <button onclick="createNewElement()">Agregar</button>
+            </div>
+
+        </div>
+
     </div>
     <div id="clima">
         Reporte del clima
     </div>
     <div id="list">
-        Lista de pendientes
+        <h5>Lista de pendientes</h5>
+        <div id="pendientes">
+            <table id="tabla">
+                <tr>
+                    <td>¿Quién realiza?</td>
+                    <td>Descripción</td>
+                    <td>Fecha</td>
+                </tr>
+            </table>
+        </div>
+
     </div>
     <div id="calc">
         <span>Calculadora</span>
         <div>
-            <input type="text" id="num1" placeholder="numero 1"/>
+            <input type="text" id="num1" placeholder="numero 1" />
             <br>
-            <input type="text" id="num2" placeholder="numero 2"/>
+            <input type="text" id="num2" placeholder="numero 2" />
             <br>
             <button onclick="getValues('s')">suma</button>
             <button onclick="getValues('m')">producto</button>
             <button onclick="getValues('r')">resta</button>
             <button onclick="getValues('d')">division</button>
-            
+
             <span>Resultado</span>
             <div id="response"></div>
         </div>
     </div>
-    <script src="../js/funcionalidad.js"></script>
+    <script src="../js/calculadora.js"></script>
+    <script src="../js/tareas.js"></script>
 </body>
 
 </html>

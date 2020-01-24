@@ -7,7 +7,7 @@ body{
                          "perf task clima"
                          "perf list calc";
     grid-template-columns: 3fr 4fr 4fr;
-    grid-template-rows: 100px 245px 245px;
+    grid-template-rows: 100px 245px 1fr;/*245px;*/
     text-align: center;
 }
 /*Estilos en general para cada division de la pagina*/
@@ -83,7 +83,38 @@ body>#content-left>#hobbies>div{
     flex-direction: column;
     text-align:center;
     font-family: "Lucida Console", Monaco, monospace;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
+}
+#task>#tareas{
+    display: flex;
+    padding: 0px 25px 0px 25px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+#task>#tareas>#der{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+}
+#list >#pendientes{
+    display: flex;
+    justify-content: center;
+}
+/*Estilos de la tabla de pendientes*/
+#list >#pendientes>table{
+    font-size: 17px;
+    width: 90%;
+    border: 1px solid rgb(146, 146, 146);
+}
+#list >#pendientes>table>tr>td{
+    border: 1px solid rgb(146, 146, 146);
+    width: 33%;
+}
+#list >#pendientes>table>tr{
+    border: 1px solid rgb(146, 146, 146);
+    width: 33%;
 }
 
 
