@@ -37,10 +37,11 @@ body >#task{
 }
 body > #clima{
     grid-area: clima;
-    background-color: rgb(228, 240, 217);
+    background-color: rgb(24, 28, 61);
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 1.5em;
     height: 100%;
+    color: white    ;
 }
 body > #list{
     grid-area: list;
@@ -128,6 +129,18 @@ body>#content-left>#hobbies>div{
 #list >#pendientes>table>tr{
     border: 1px solid rgb(146, 146, 146);
     width: 33%;
+}
+/*Estilos para el clima*/
+
+#clima>#contenedor>#icono>img{
+    width: 60px;
+    padding-right: 30px;
+    
+}
+#clima>#contenedor{
+    display: flex;
+    justify-content: center;
+    
 }
 
 
