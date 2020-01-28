@@ -7,7 +7,7 @@ body{
                          "perf task clima"
                          "perf list calc";
     grid-template-columns: 3fr 4fr 4fr;
-    grid-template-rows: 100px 230px 230px;/*245px;*/
+    grid-template-rows: 100px 220px 270px;/*245px;*/
     text-align: center;
 }
 /*Estilos en general para cada division de la pagina*/
@@ -118,7 +118,7 @@ body>#content-left>#hobbies>div{
 }
 /*Estilos de la tabla de pendientes*/
 #list >#pendientes>table{
-    font-size: 17px;
+    font-size: 13px;
     width: 90%;
     border: 1px solid rgb(146, 146, 146);
 }
@@ -131,16 +131,20 @@ body>#content-left>#hobbies>div{
     width: 33%;
 }
 /*Estilos para el clima*/
-
+#clima>#contenedor>#icono{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
+}
 #clima>#contenedor>#icono>img{
     width: 60px;
-    padding-right: 30px;
-    
+    padding-top: 10px;    
 }
 #clima>#contenedor{
     display: flex;
     justify-content: center;
-    
 }
 
 
